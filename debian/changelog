@@ -1,0 +1,331 @@
+libyaml-tiny-perl (1.73-1) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Salvatore Bonaccorso ]
+  * Update Vcs-* headers for switch to salsa.debian.org
+
+  [ gregor herrmann ]
+  * Import upstream version 1.73.
+  * Update upstream contact.
+  * Declare compliance with Debian Policy 4.1.3.
+
+ -- gregor herrmann <gregoa@debian.org>  Sat, 10 Mar 2018 18:57:11 +0100
+
+libyaml-tiny-perl (1.70-1) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Salvatore Bonaccorso ]
+  * debian/control: Use HTTPS transport protocol for Vcs-Git URI
+
+  [ gregor herrmann ]
+  * debian/copyright: change Copyright-Format 1.0 URL to HTTPS.
+
+  [ Lucas Kanashiro ]
+  * Import upstream version 1.70
+  * Bump debhelper compatibility level to 10
+  * Declare compliance with Debian policy 3.9.8
+  * debian/control: update build dependencies, thanks cme
+
+ -- Lucas Kanashiro <kanashiro@debian.org>  Tue, 24 Jan 2017 15:44:03 -0200
+
+libyaml-tiny-perl (1.69-1) unstable; urgency=medium
+
+  * Team upload.
+  * Import upstream version 1.69
+  * Drop explicit alternative (versioned) Build-Depends-Indep for Test::More.
+    Upstream lowered the requirement to Test::More 0.88 which is already
+    satisfied in Perl core in Wheezy.
+
+ -- Salvatore Bonaccorso <carnil@debian.org>  Thu, 13 Aug 2015 11:49:12 +0200
+
+libyaml-tiny-perl (1.67-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release.
+
+ -- Nuno Carvalho <smash@cpan.org>  Sun, 24 May 2015 16:25:19 +0100
+
+libyaml-tiny-perl (1.66-1) unstable; urgency=medium
+
+  * Team upload.
+  * Import upstream version 1.66.
+  * Update build dependencies.
+
+ -- gregor herrmann <gregoa@debian.org>  Sun, 10 May 2015 17:45:45 +0200
+
+libyaml-tiny-perl (1.64-1) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Salvatore Bonaccorso ]
+  * Update Vcs-Browser URL to cgit web frontend
+
+  [ gregor herrmann ]
+  * debian/control: update {versioned,alternative} (build) dependencies.
+  * Add debian/upstream/metadata
+  * Imported upstream version 1.64
+  * Update build dependencies (more JSON::* modules).
+  * Mark package as autopkgtest-able.
+  * Declare compliance with Debian Policy 3.9.6.
+
+ -- gregor herrmann <gregoa@debian.org>  Fri, 10 Oct 2014 14:16:27 +0200
+
+libyaml-tiny-perl (1.63-1) unstable; urgency=medium
+
+  * Team upload.
+  * Imported Upstream version 1.63
+  * Update versioned Build-Depends on libmodule-build-tiny-perl (>= 0.036)
+
+ -- Salvatore Bonaccorso <carnil@debian.org>  Fri, 13 Jun 2014 14:58:42 +0200
+
+libyaml-tiny-perl (1.62-1) unstable; urgency=medium
+
+  * Team upload.
+
+  [ gregor herrmann ]
+  * debian/control: bump required debhelper version for
+    Module::Build::Tiny to 9.20140227.
+  * Strip trailing slash from metacpan URLs.
+
+  [ Salvatore Bonaccorso ]
+  * Imported Upstream version 1.62
+  * Remove trailing empty line in debian/watch file
+
+ -- Salvatore Bonaccorso <carnil@debian.org>  Sat, 22 Mar 2014 21:51:46 +0100
+
+libyaml-tiny-perl (1.61-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release.
+  * Make build dependency on libmodule-build-tiny-perl versioned.
+  * Drop optional build dependencies on libcpan-meta{,-requirements}-perl.
+
+ -- gregor herrmann <gregoa@debian.org>  Wed, 26 Feb 2014 18:54:04 +0100
+
+libyaml-tiny-perl (1.60-1) unstable; urgency=low
+
+  * Team upload.
+  * Imported Upstream version 1.60
+  * Make Build-Depends on libmodule-build-tiny-perl unversioned
+  * Install CONTRIBUTING file to docs for libyaml-tiny-perl
+  * Add libjson-perl to Build-Depends-Indep for JSON dependency in tests
+  * Add Build-Depends-Indep on libcpan-meta-perl
+  * Add Build-Depends-Indep on libcpan-meta-requirements-perl
+  * Update build-dependency for Test::More requirements.
+    Update alternative Build-Depends-Indep for Test::More to
+    libtest-simple-perl (>= 0.99) | perl (>= 5.19.5).
+  * Document incompatible changes in debian/NEWS
+  * Update copyright years for upstream files
+  * Declare compliance with Debian Policy 3.9.5
+  * Wrap and sort fields in debian/control file
+
+ -- Salvatore Bonaccorso <carnil@debian.org>  Sat, 15 Feb 2014 23:39:33 +0100
+
+libyaml-tiny-perl (1.56-1) unstable; urgency=low
+
+  * Team upload.
+  * New upstream release.
+  * Update build dependencies.
+
+ -- gregor herrmann <gregoa@debian.org>  Sat, 05 Oct 2013 16:34:12 +0200
+
+libyaml-tiny-perl (1.55-1) unstable; urgency=low
+
+  * Team upload.
+  * Imported Upstream version 1.55
+  * Update build-dependency for Test::More requirement.
+    Add alternative Build-Depends-Indep on perl (>= 5.11.1) or
+    libtest-simple-perl. libtest-simple-perl (>= 0.94) already satisfied in
+    oldstable.
+  * Drop versioned requirement on perl version
+    perl (>= 5.8.8-7) already satisifed in oldstable. Change versioned
+    Build-Depends-Indep on perl to an unversioned dependency.
+  * Move Homepage field to debian/control source package stanza
+  * Bump Debhelper compat level to 9
+  * Convert debian/copyright format.
+    Convert debian/copyright to copyright-format 1.0 as released together
+    with Debian policy 3.9.3.
+  * Drop necessary_typos.patch patch
+
+ -- Salvatore Bonaccorso <carnil@debian.org>  Sun, 22 Sep 2013 07:10:22 +0200
+
+libyaml-tiny-perl (1.51-2) unstable; urgency=low
+
+  * Take over for the Debian Perl Group with maintainer's permission
+    (http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=610384#20)
+  * debian/control: Added: Vcs-Git field (source stanza); Vcs-Browser
+    field (source stanza). Changed: Homepage field changed to
+    metacpan.org URL; Maintainer set to Debian Perl Group <pkg-perl-
+    maintainers@lists.alioth.debian.org> (was: John Lightsey
+    <lightsey@debian.org>); added myself to Uploaders.
+  * debian/watch: use metacpan-based URL.
+  * Standards-Version: 3.9.4 (no changes needed)
+  * replace debian/rules with dh9 three-liner
+
+ -- Damyan Ivanov <dmn@debian.org>  Sat, 30 Mar 2013 23:35:14 +0200
+
+libyaml-tiny-perl (1.51-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- John Lightsey <lightsey@debian.org>  Sat, 31 Mar 2012 15:43:52 -0500
+
+libyaml-tiny-perl (1.50-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- John Lightsey <lightsey@debian.org>  Tue, 28 Jun 2011 14:40:08 -0500
+
+libyaml-tiny-perl (1.48-1) unstable; urgency=low
+
+  * New upstream release
+  * Rebase necessary_typos.patch
+  * Switch depends to perl-base instead of perl (Closes: #610482)
+  * Improve package short/long descriptions (Closes: #594090)
+  * Update standards version to 3.9.1.0
+
+ -- John Lightsey <lightsey@debian.org>  Fri, 18 Feb 2011 08:57:00 -0600
+
+libyaml-tiny-perl (1.43-1) unstable; urgency=low
+
+  * New upstream release
+  * Update standards version to 3.9.0.0
+
+ -- John Lightsey <lightsey@debian.org>  Tue, 20 Jul 2010 07:02:42 -0500
+
+libyaml-tiny-perl (1.42-1) unstable; urgency=low
+
+  * New upstream release
+  * Convert to source format 3.0 (quilt)
+  * Add missing misc:Depends to control file
+  * Add patch for several documentation typos flagged by lintian
+
+ -- John Lightsey <lightsey@debian.org>  Mon, 05 Jul 2010 16:59:32 -0500
+
+libyaml-tiny-perl (1.41-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- John Lightsey <lightsey@debian.org>  Sat, 06 Feb 2010 10:17:32 -0600
+
+libyaml-tiny-perl (1.40-1) unstable; urgency=low
+
+  * New upstream release
+  * Bump standards version to 3.8.3.0
+
+ -- John Lightsey <lightsey@debian.org>  Sun, 27 Sep 2009 11:51:02 -0500
+
+libyaml-tiny-perl (1.39-1) unstable; urgency=low
+
+  * New upstream release (Closes: #530300)
+  * Add debian/watch file
+
+ -- John Lightsey <lightsey@debian.org>  Wed, 27 May 2009 08:02:30 -0500
+
+libyaml-tiny-perl (1.36-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- John Lightsey <lightsey@debian.org>  Mon, 20 Apr 2009 20:28:53 -0500
+
+libyaml-tiny-perl (1.32-1) unstable; urgency=low
+
+  * New upstream release (Closes: #485420, #485442)
+
+ -- John Lightsey <lightsey@debian.org>  Mon, 09 Jun 2008 10:16:33 -0500
+
+libyaml-tiny-perl (1.29-1) unstable; urgency=low
+
+  * New upstream release
+  * Let dh_perl fill in package dependencies to silence lintian warning
+
+ -- John Lightsey <lightsey@debian.org>  Sun, 20 Apr 2008 15:05:28 -0500
+
+libyaml-tiny-perl (1.27-1) unstable; urgency=low
+
+  * New upstream release
+    - Skip 04_scalar test when YAML.pm is not installed (Closes: #473944)
+
+ -- John Lightsey <lightsey@debian.org>  Wed, 09 Apr 2008 19:05:00 -0500
+
+libyaml-tiny-perl (1.26-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- John Lightsey <lightsey@debian.org>  Wed, 26 Mar 2008 21:04:00 -0500
+
+libyaml-tiny-perl (1.25-2) unstable; urgency=low
+
+  * Check for existence of $(TMP)/usr/lib/perl5 before removing
+    closes: #467668
+  * Update copyright file to silence lintian warnings
+
+ -- John Lightsey <lightsey@debian.org>  Sun, 09 Mar 2008 20:35:00 -0500
+
+libyaml-tiny-perl (1.25-1) unstable; urgency=low
+
+  * New upstream release
+  * Bump standards version to 3.7.3.0
+  * Convert Homepage in description to Homepage field in control file
+
+ -- John Lightsey <lightsey@debian.org>  Wed, 23 Jan 2008 18:54:00 -0600
+
+libyaml-tiny-perl (1.21-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- John Lightsey <lightsey@debian.org>  Thu, 03 Jan 2008 21:01:00 -0600
+
+libyaml-tiny-perl (1.20-1) unstable; urgency=low
+
+  * New upstream release
+  * Remove build-depends-indep on libmodule-install-perl
+  * Update homepage link in debian/control
+
+ -- John Lightsey <lightsey@debian.org>  Tue, 20 Nov 2007 20:56:00 -0600
+
+libyaml-tiny-perl (1.14-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- John Lightsey <lightsey@debian.org>  Sat, 15 Sep 2007 10:23:49 -0500
+
+libyaml-tiny-perl (1.13-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- John Lightsey <lightsey@debian.org>  Sat, 21 Jul 2007 15:36:00 -0500
+
+libyaml-tiny-perl (1.12-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- John Lightsey <lightsey@debian.org>  Sun, 24 Jun 2007 17:51:00 -0500
+
+libyaml-tiny-perl (1.09-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- John Lightsey <lightsey@debian.org>  Fri, 01 Jun 2007 22:44:00 -0500
+
+libyaml-tiny-perl (1.08-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- John Lightsey <lightsey@debian.org>  Sun, 20 May 2007 22:17:00 -0500
+
+libyaml-tiny-perl (1.05-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- John Lightsey <lightsey@debian.org>  Mon, 14 May 2007 22:41:57 -0500
+
+libyaml-tiny-perl (1.04-1) unstable; urgency=low
+
+  * Initial Release.
+    closes: #421556
+
+ -- John Lightsey <lightsey@debian.org>  Sat, 28 Apr 2007 14:02:57 -0500
+

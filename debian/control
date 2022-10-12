@@ -1,0 +1,23 @@
+Source: libyaml-tiny-perl
+Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Uploaders: Damyan Ivanov <dmn@debian.org>
+Section: perl
+Testsuite: autopkgtest-pkg-perl
+Priority: optional
+Build-Depends: debhelper (>= 10)
+Build-Depends-Indep: libjson-maybexs-perl,
+                     perl
+Standards-Version: 4.1.3
+Vcs-Browser: https://salsa.debian.org/perl-team/modules/packages/libyaml-tiny-perl
+Vcs-Git: https://salsa.debian.org/perl-team/modules/packages/libyaml-tiny-perl.git
+Homepage: https://metacpan.org/release/YAML-Tiny
+
+Package: libyaml-tiny-perl
+Architecture: all
+Depends: ${misc:Depends},
+         ${perl:Depends}
+Description: Perl module for reading and writing YAML files
+ YAML::Tiny is a pure Perl module that provides support for reading and
+ writing a usable subset of the full YAML specification. It aims to
+ minimize memory requirements and avoid XS while remaining relatively
+ fast.
